@@ -47,7 +47,6 @@
    ```bash
    pip install -r requirements.txt
 
-
 ### 2️⃣ 모델 학습 및 실행
 
 #### 💡 개체명 인식(NER)
