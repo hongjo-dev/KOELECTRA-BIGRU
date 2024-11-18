@@ -1,46 +1,50 @@
-# KOELECTRA-BiGRU
+# 🌟 KOELECTRA-BiGRU
 
-이 프로젝트는 **KOELECTRA** 모델과 **BiGRU**를 결합하여 개체명 인식(NER), 속성명 분석, 감성 분석을 수행하는 한국어 자연어 처리(NLP) 모델을 제공합니다. 학습 데이터는 [AI허브 관광 특화 말뭉치 데이터](https://www.aihub.or.kr/aihubdata/data/view.do?currMenu=&topMenu=&aihubDataSe=data&dataSetSn=71714)를 사용하였으며, 학습된 모델 파일과 관련 코드가 포함되어 있습니다.
+**KOELECTRA-BiGRU**는 **KOELECTRA** 모델과 **BiGRU**를 결합하여 **개체명 인식(NER)**, **속성명 분석**, **감성 분석**을 수행할 수 있는 한국어 자연어 처리(NLP) 프로젝트입니다.  
+학습 데이터는 [AI허브 관광 특화 말뭉치 데이터](https://www.aihub.or.kr/aihubdata/data/view.do?currMenu=&topMenu=&aihubDataSe=data&dataSetSn=71714)를 사용했으며, 학습된 모델과 실행 가능한 코드가 포함되어 있습니다.
 
 ---
 
-## 🚀 주요 특징
+## 🔑 **주요 특징**
 
 - **기반 모델:** [KoELECTRA](https://github.com/monologg/KoELECTRA?tab=readme-ov-file)
 - **파인튜닝 계층:** BiGRU (Bidirectional Gated Recurrent Unit)
-- **주요 작업:**
-  - 개체명 인식 (Named Entity Recognition, NER)
-  - 속성명 분석
-  - 감성 분석
+- **주요 기능:**
+  - **개체명 인식 (NER):** 텍스트에서 특정 명사 태깅
+  - **속성명 분석:** 텍스트 내의 특정 속성 정보 추출
+  - **감성 분석:** 텍스트 감성(긍정, 부정, 중립) 분류
 - **데이터셋:** AI허브 관광 특화 말뭉치
-- **결과 파일:** 학습된 모델(`.pth` 파일)과 분석 코드를 통해 재현 가능
+- **결과 파일:** 학습된 모델(`.pth`) 및 코드로 재현 가능
 
 ---
 
-## 📂 프로젝트 구조
+## 📂 **프로젝트 구조**
 
-├── model/ # 학습된 모델 파일 저장 ├── src/ # 주요 코드 파일 │ ├── attribute.py # 속성명 분석 코드 │ ├── attribute_train.py # 속성명 학습 코드 │ ├── emotion.py # 감성 분석 코드 │ ├── emotion_train.py # 감성 학습 코드 │ ├── object.py # 개체명 인식 코드 │ ├── object_train.py # 개체명 학습 코드 ├── requirements.txt # 필요한 패키지 목록 └── README.md # 프로젝트 설명 파일
+```plaintext
+├── model/                 # 학습된 모델 파일 저장
+│   ├── koelectra_bigru.pth # 학습된 모델 파일
+├── src/                   # 주요 코드 파일
+│   ├── attribute.py       # 속성명 분석 코드
+│   ├── attribute_train.py # 속성명 학습 코드
+│   ├── emotion.py         # 감성 분석 코드
+│   ├── emotion_train.py   # 감성 학습 코드
+│   ├── object.py          # 개체명 인식 코드
+│   ├── object_train.py    # 개체명 학습 코드
+├── requirements.txt       # 필요한 패키지 목록
+└── README.md              # 프로젝트 설명 파일
 
-yaml
-코드 복사
 
----
-
-## 🔧 설치 및 실행
-
-### 1. 환경 설정
-1. Python 3.8 이상 설치
-2. 의존성 설치:
-   ```bash
-   pip install -r requirements.txt
-2. 개체명 인식(NER) 학습
-개체명 인식(NER) 모델 학습을 위해 아래 명령어를 실행하세요:
+⚙️ 설치 및 실행
+1️⃣ 환경 설정
+Python 3.8 이상 설치
+필요한 패키지 설치:
+pip install -r requirements.txt
+2️⃣ 모델 학습 및 실행
+개체명 인식(NER) 학습:
 python src/object_train.py
-3. 속성명 분석 학습
-속성명 분석 모델 학습:
+속성명 분석 학습:
 python src/attribute_train.py
-4. 감성 분석 학습
-감성 분석 모델 학습:
+감성 분석 학습:
 python src/emotion_train.py
 
 
