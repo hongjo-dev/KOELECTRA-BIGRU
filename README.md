@@ -22,17 +22,12 @@
 
 ```plaintext
 📦 프로젝트 디렉토리
-├── model/                 # 학습된 모델 파일 저장
-│   ├── koelectra_bigru.pth # 학습된 모델 파일
-├── src/                   # 주요 코드 파일
-│   ├── attribute.py       # 속성명 분석 코드
-│   ├── attribute_train.py # 속성명 학습 코드
-│   ├── emotion.py         # 감성 분석 코드
-│   ├── emotion_train.py   # 감성 학습 코드
-│   ├── object.py          # 개체명 인식 코드
-│   ├── object_train.py    # 개체명 학습 코드
-├── requirements.txt       # 필요한 패키지 목록
-└── README.md              # 프로젝트 설명 파일
+├── model/                # 학습된 모델 파일 (.pth 등) 저장
+├── test/                 # 검증 코드 및 관련 데이터
+├── train/                # 학습 코드 및 관련 데이터
+├── .gitattributes        # Git LFS 설정 파일
+├── README.md             # 프로젝트 설명 파일
+└── requirements.txt      # 프로젝트 의존성 패키지 목록
 ```
 
 ## ⚙️ **설치 및 실행**
