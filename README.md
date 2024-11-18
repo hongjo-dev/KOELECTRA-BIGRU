@@ -18,9 +18,10 @@
 
 ---
 
-## 📂 **프로젝트 구조**
+## 📂 프로젝트 구조
 
 ```plaintext
+📦 프로젝트 디렉토리
 ├── model/                 # 학습된 모델 파일 저장
 │   ├── koelectra_bigru.pth # 학습된 모델 파일
 ├── src/                   # 주요 코드 파일
@@ -32,8 +33,6 @@
 │   ├── object_train.py    # 개체명 학습 코드
 ├── requirements.txt       # 필요한 패키지 목록
 └── README.md              # 프로젝트 설명 파일
-
----
 
 ## ⚙️ 설치 및 실행
 
