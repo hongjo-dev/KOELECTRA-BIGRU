@@ -146,7 +146,7 @@
 ## 📜 인용
 KoELECTRA 인용
 bibtex
-코드 복사
+```json
 @misc{park2020koelectra,
   author = {Park, Jangwon},
   title = {KoELECTRA: Pretrained ELECTRA Model for Korean},
@@ -155,5 +155,6 @@ bibtex
   journal = {GitHub repository},
   howpublished = {\url{https://github.com/monologg/KoELECTRA}}
 }
+```
 데이터셋 출처
 데이터셋: AI허브 한국어 텍스트 데이터셋
