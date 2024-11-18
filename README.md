@@ -34,18 +34,32 @@
 └── README.md              # 프로젝트 설명 파일
 
 
-⚙️ 설치 및 실행
-1️⃣ 환경 설정
-Python 3.8 이상 설치
-필요한 패키지 설치:
-pip install -r requirements.txt
-2️⃣ 모델 학습 및 실행
-개체명 인식(NER) 학습:
-python src/object_train.py
-속성명 분석 학습:
-python src/attribute_train.py
-감성 분석 학습:
-python src/emotion_train.py
+## ⚙️ 설치 및 실행
+
+### 1️⃣ 환경 설정
+
+1. **Python 3.8 이상 설치**  
+   Python이 설치되어 있지 않다면 [Python 공식 웹사이트](https://www.python.org/downloads/)에서 다운로드 및 설치하세요.
+
+2. **필요한 패키지 설치**  
+   아래 명령어를 사용하여 프로젝트 실행에 필요한 패키지를 설치합니다:
+   ```bash
+   pip install -r requirements.txt
+
+### 2️⃣ 모델 학습 및 실행
+
+#### 💡 개체명 인식(NER)
+- 학습 코드 실행:
+  ```bash
+  python src/object_train.py
+#### 💡 속성명 인식(NER)
+- 학습 코드 실행:
+  ```bash
+  python src/attribute_train.py
+#### 💡 감성 인식(NER)
+- 학습 코드 실행:
+  ```bash
+  python src/emotion_train.py
 
 
 📜 데이터셋 설명
