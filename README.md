@@ -67,6 +67,7 @@
 
 데이터셋 구성 예시
 
+```json
 {
     "info": {
         "creator": "세명소프트",
@@ -79,14 +80,23 @@
                 "sentenceId": "0001",
                 "sentence": "관광지명 영천 목재문화체험장",
                 "annotations": [
-                    {"TagText": "영천", "TagCode": "LC", "startPos": 5, "endPos": 6},
-                    {"TagText": "목재문화체험장", "TagCode": "LC", "startPos": 8, "endPos": 14}
+                    {
+                        "TagText": "영천",
+                        "TagCode": "LC",
+                        "startPos": 5,
+                        "endPos": 6
+                    },
+                    {
+                        "TagText": "목재문화체험장",
+                        "TagCode": "LC",
+                        "startPos": 8,
+                        "endPos": 14
+                    }
                 ]
             }
         ]
     }
 }
-
 
 ## 🔖 **태그 정의**
 
