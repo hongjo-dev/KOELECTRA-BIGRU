@@ -145,7 +145,7 @@
 
 ## 📜 인용
 KoELECTRA 인용
-bibtex
+
 ```json
 @misc{park2020koelectra,
   author = {Park, Jangwon},
@@ -156,5 +156,6 @@ bibtex
   howpublished = {\url{https://github.com/monologg/KoELECTRA}}
 }
 ```
+
 데이터셋 출처
 데이터셋: AI허브 한국어 텍스트 데이터셋
