@@ -35,25 +35,20 @@ yaml
    pip install -r requirements.txt
 2. 개체명 인식(NER) 학습
 개체명 인식(NER) 모델 학습을 위해 아래 명령어를 실행하세요:
-bash
-코드 복사
 python src/object_train.py
 3. 속성명 분석 학습
 속성명 분석 모델 학습:
-bash
-코드 복사
 python src/attribute_train.py
 4. 감성 분석 학습
 감성 분석 모델 학습:
-bash
-코드 복사
 python src/emotion_train.py
+
+
 📜 데이터셋 설명
 이 프로젝트는 AI허브 관광 특화 말뭉치 데이터셋을 사용하여 학습하였습니다. 데이터셋은 관광지 정보, 감성 태그, 속성 태그 등으로 구성되어 있습니다.
 
 데이터셋 구성 예시
-json
-코드 복사
+
 {
     "info": {
         "creator": "세명소프트",
@@ -73,6 +68,8 @@ json
         ]
     }
 }
+
+
 🔖 태그 정의
 개체명(NER)
 | 번호 | 분류   | 코드 | 설명                         |
@@ -124,3 +121,5 @@ bibtex
 }
 데이터셋 출처
 데이터셋: AI허브 한국어 텍스트 데이터셋
+
+
